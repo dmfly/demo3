@@ -16,6 +16,7 @@ public class Demo3Application {
 
     @GetMapping("hello")
     public String hello(@RequestParam(value = "name", defaultValue = "世界") String name) {
+        System.out.println("test idea git commit");
         return String.format("Hello %s!", name);
     }
 
